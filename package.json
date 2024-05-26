@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-pug": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "sass": "^1.77.2",
+    "typescript": "^5.4.5"
+  }
+}
