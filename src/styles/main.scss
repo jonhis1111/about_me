@@ -1,9 +1,59 @@
-body {
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
-  
-    h1 {
-      color: #999;
+@mixin mqPc {
+    @media (min-width: 960px) {
+        @content;
     }
-  }
-  
+}
+
+body {
+    line-height: 1.4;
+}
+
+// KV
+.top-kv{
+    background: #f0f8ff;
+}
+
+.top-kv__inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 100px 20px 100px;
+    @include mqPc {
+        flex-direction: row;
+        gap: 60px;
+        width: fit-content;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+}
+
+.top-kv__icon {
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #333;
+    border-radius: 50%;
+    @include mqPc {
+        max-width: 600px;
+    }
+}
+
+.top-kv__text {
+    text-align: center;
+    @include mqPc {
+        width: 100%;
+        text-align: left;
+    }
+}
+
+.top-kv__ttl {
+    font-weight: 700;
+    font-size: 30px;
+    @include mqPc {
+        font-size: 50px;
+    }
+}
+
+.top-kv__detail{
+    margin-top: 30px;
+}
